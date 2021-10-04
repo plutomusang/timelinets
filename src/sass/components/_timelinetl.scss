@@ -1,0 +1,57 @@
+@use'../abstracts' as *;
+
+.timeline-container{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    place-items:center;      
+    
+  }
+  
+  .timeline {
+    display:grid;
+    grid-template-columns: 1fr 40px minmax(200px, 3fr) 1fr;
+    width: 500px;
+  }
+  .tl-date-rel{
+    display: flex;
+    justify-content: flex-end;
+    place-items:start;   
+    font-family: $fnt-time;
+    font-size: .7rem;
+  }
+  .tl-date{
+    display: flex;
+    justify-content: flex-end;
+    place-items:center;   
+    font-family: $fnt-time;
+    font-size: .7rem;
+  }
+  .tl-status{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items:center;
+    height: 30px;
+    position:relative;
+  }
+  .tl-status-last{
+    grid-column: 2 / 3;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items:center;
+    height: 30px;
+    position:relative;
+  }
+  .tl-info {
+    font-family: $fnt-title;
+    color: $clr-title;
+    font-size: 1rem;
+    display:flex;
+    justify-content: flex-left;
+    place-items: center;
+    
+  }
+  

@@ -1,0 +1,9 @@
+@use'../abstracts' as *;
+
+.infoClass{
+    font-family: $fnt-info;
+    color: $clr-cool;
+    font-size: .7rem;
+    text-align: justify;
+    padding-right: 20px;
+  }

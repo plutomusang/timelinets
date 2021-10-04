@@ -1,0 +1,11 @@
+@use'../abstracts' as *;
+
+
+.buttons{
+    display:flex;
+    justify-content: flex-end;
+    place-items:center;
+    font-family: $fnt-button;
+    color: $clr-buttonfont;
+    font-size: .6rem;
+  }

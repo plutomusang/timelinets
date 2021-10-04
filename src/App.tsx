@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 
+import Timenode from './component/timenode';
+import SampleData from './json/fetchData.json';
 function App() {
+  let data = SampleData.timelineData;
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {data.map((value)=>
+        {
+        return <Timenode 
+          personName={value.personName}
+          description={value.description}
+          timeRecieved={value.timeRecieved}
+          timeReleased={value.timeReleased}
+          documentStatus={value.documentStatus}
+          isLastItem={value.isLastItem} />
+        })
+      }
     </div>
   );
 }

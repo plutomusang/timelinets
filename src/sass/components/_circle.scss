@@ -1,0 +1,62 @@
+@use'../abstracts' as *;
+
+.circliner {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    height:100%;
+    width: $em-vliner;
+    background: $clr-hot;
+  }
+  
+  
+  .circle{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    height:$em-circle;
+    width:$em-circle;
+    border: 1px solid $clr-go;
+    border-radius: 50%;
+    background: $clr-go;
+    position:relative;
+    
+  }
+  .circle-alarm{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;  
+    height: $em-circle;
+    width: $em-circle;
+    border: 1px solid $clr-alarm;
+    border-radius: 50%;
+    background: $clr-alarm;
+    position:relative;
+    
+  }
+
+  
+.circle-cross{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;  
+    width:$em-circle-cross-diameter;
+    height:$em-circle-cross-diameter;
+    background: $clr-hot;
+    border-radius:50%;
+    position:relative;
+    display:grid;
+    place-items:center;
+    }
+  
+  .circle-cross::before{
+    content: "";
+    height:$em-thickness;
+    width:50%;
+    background:$clr-cool;
+    position:absolute;
+    }
+  
+  .circle-cross::after {
+    content: "";
+    width:$em-thickness;
+    height:50%;
+    background:$clr-cool;
+    position: absolute;    
+  }

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Urbanist:wght@500&display=swap");
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  place-items: center;
+  font-family: "Cabin", Arial;
+  color: #1c767d;
+  font-size: 0.6rem;
+}
+
+.circliner {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  height: 100%;
+  width: 0.15em;
+  background: #ffd014;
+}
+
+.circle {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  height: 0.9em;
+  width: 0.9em;
+  border: 1px solid #5bf57f;
+  border-radius: 50%;
+  background: #5bf57f;
+  position: relative;
+}
+
+.circle-alarm {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  height: 0.9em;
+  width: 0.9em;
+  border: 1px solid #e830d6;
+  border-radius: 50%;
+  background: #e830d6;
+  position: relative;
+}
+
+.circle-cross {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  width: 2em;
+  height: 2em;
+  background: #ffd014;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.circle-cross::before {
+  content: "";
+  height: 0.2em;
+  width: 50%;
+  background: #2dbdc8;
+  position: absolute;
+}
+
+.circle-cross::after {
+  content: "";
+  width: 0.2em;
+  height: 50%;
+  background: #2dbdc8;
+  position: absolute;
+}
+
+.infoclass {
+  font-family: "Cabin", Arial;
+  color: #2dbdc8;
+  font-size: 0.7rem;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.vliner-container {
+  display: grid;
+  place-items: center;
+}
+
+.vliner {
+  min-height: 50px;
+  height: 100%;
+  width: 0.15em;
+  background: #ffd014;
+}
+
+.timeline-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 40px minmax(200px, 3fr) 1fr;
+  width: 500px;
+}
+
+.tl-date-rel {
+  display: flex;
+  justify-content: flex-end;
+  place-items: start;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.tl-date {
+  display: flex;
+  justify-content: flex-end;
+  place-items: center;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+.tl-status {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 30px;
+  position: relative;
+}
+
+.tl-status-last {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 30px;
+  position: relative;
+}
+
+.tl-info {
+  font-family: "Roboto", Arial;
+  color: #6d34df;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-left;
+  place-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
